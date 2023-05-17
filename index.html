@@ -5,19 +5,37 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
     }
     .topbar {
       display: flex;
       justify-content: space-between;
-      padding: 10px;
-      background-color: #333;
+      padding: 20px;
+      background-color: #5a5a5a;
       color: white;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    }
+    .topbar h1 {
+      margin: 0;
     }
     .content {
-      margin: 20px;
+      margin: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
     }
     #connect-button {
       cursor: pointer;
+      padding: 10px 20px;
+      background-color: #ff8800;
+      color: white;
+      border-radius: 4px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+    #connect-button:hover {
+      background-color: #ff6600;
     }
   </style>
 </head>
