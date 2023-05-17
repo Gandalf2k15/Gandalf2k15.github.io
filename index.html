@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Furry Space Station 14 Server</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+    .content {
+      margin: 20px;
+    }
+    #connect-button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Furry SS14 Server</h1>
+    <div id="connect-button">Connect</div>
+  </div>
+
+  <div class="content">
+    <h2>About our Server</h2>
+    <p>
+      Welcome to our Furry Space Station 14 Server! Here, you will get to experience a unique role-playing adventure in a diverse and inclusive environment. You'll get to navigate through our well-designed space station while interacting with a variety of different characters. We strive to maintain a friendly and immersive gaming experience. We look forward to seeing you aboard!
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('connect-button').addEventListener('click', function() {
+      navigator.clipboard.writeText('Your connection string here')
+        .then(function() {
+          alert('Connection string copied to clipboard');
+        })
+        .catch(function(error) {
+          console.error('Could not copy text: ', error);
+        });
+    });
+  </script>
+</body>
+</html>
